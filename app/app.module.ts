@@ -3,6 +3,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
+import  {InMemoryWebApiModule} from 'angular-in-memory-web-api'
+import  {InMemoryDataService} from './shared/data.service';
+
+
+
 
 import { AppComponent} from './app.components';
 import {TodoFormComponent} from './todo-form/todo-form.component';
@@ -14,7 +19,8 @@ import { TodoService } from './shared/todo.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService)
     ],
   declarations: [
     AppComponent,
