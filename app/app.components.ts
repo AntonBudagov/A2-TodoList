@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
-import  {Todo} from './shared/todos';
-import { todos } from './shared/data'
+// import  {Todo} from './shared/todos';
+// import { todos } from './shared/data.service'
 
 @Component({
   moduleId: module.id,
@@ -12,8 +12,8 @@ import { todos } from './shared/data'
 })
 
 export class AppComponent{
-  title:string = "Angular ToDo";
-  todos: Todo[] = todos;
+  // title:string = "Angular ToDo";
+  // todos: Todo[] = [];
 
 
   // create(title: string){
