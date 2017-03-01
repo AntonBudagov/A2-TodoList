@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers, RequestOptions} from '@angular/http';
-import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/operator/toPromise';
 
 // import {todos} from './data';
 import {Todo} from './todos';
@@ -8,6 +8,7 @@ import {Todo} from './todos';
 @Injectable()
 export class TodoService {
   private apiUrl = 'api/todos'
+  // private apiUrl = 'http://jsonplaceholder.typicode.com/posts/'
   todos: Todo[] = [];
 
   constructor(private http: Http){}

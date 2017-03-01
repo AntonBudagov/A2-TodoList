@@ -19,7 +19,8 @@ export class InMemoryDataService implements InMemoryDataService {
       completed: true
      }
     ];
-    return {todos};
+    // return {todos};
+    return {todos: todos};
   }
 }
 
